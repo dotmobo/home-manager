@@ -9,6 +9,8 @@
   home.stateVersion = "24.05";
 
   home.packages = with pkgs; [
+    fira-code
+    fira-code-symbols
   ];
 
   home.file = { };
@@ -20,5 +22,7 @@
     tmux = (import ./tmux.nix { inherit pkgs; });
     neovim = (import ./neovim.nix { inherit pkgs; });
   };
+
+  fonts.fontconfig.enable = true;
 
 }
