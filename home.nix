@@ -9,8 +9,6 @@
   home.stateVersion = "24.05";
 
   home.packages = with pkgs; [
-    git
-    tmux
   ];
 
   home.file = { };
@@ -20,6 +18,7 @@
   programs = {
     git = (import ./git.nix { inherit pkgs; });
     tmux = (import ./tmux.nix { inherit pkgs; });
+    neovim = (import ./neovim.nix { inherit pkgs; });
   };
 
 }
