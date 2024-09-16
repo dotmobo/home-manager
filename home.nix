@@ -11,6 +11,7 @@
   home.packages = with pkgs; [
     fira-code
     fira-code-symbols
+    nodejs_20
   ];
 
   home.file = { };
