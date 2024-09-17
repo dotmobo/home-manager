@@ -108,7 +108,7 @@ in
 
     peek = "peek -b ffmpeg";
 
-    code = "code-insiders";
+    # code = "code-insiders";
 
   };
 }
