@@ -22,7 +22,7 @@
     ms-python.debugpy
     ms-python.black-formatter
     charliermarsh.ruff
-    # ms-python.mypy-type-checker
+    ms-pyright.pyright
     esbenp.prettier-vscode
     dbaeumer.vscode-eslint
     ms-azuretools.vscode-docker

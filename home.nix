@@ -25,6 +25,10 @@
     nodejs_20
     go
     python312
+    poetry
+    ruff
+    black
+    pyright
     rustc
     rustfmt
     cargo
@@ -40,6 +44,7 @@
     ffmpeg
     htop
     xclip
+    bats
   ];
 
   home.file = { };
