@@ -30,6 +30,16 @@
     cargo
     rust-analyzer
     clippy
+    zig
+    lua
+    # Tools
+    httpie
+    wget
+    jq
+    curl
+    ffmpeg
+    htop
+    xclip
   ];
 
   home.file = { };

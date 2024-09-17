@@ -29,32 +29,27 @@ in
     set --export LANG fr_FR.UTF-8
     set --export EDITOR vim
 
+    # local bin
+    set --export PATH $PATH ~/.local/bin
+
     # Node.js
     set --export NODE_OPTIONS "--max-old-space-size=4096"
+
     # Chrome
     set --export CHROME_BIN /usr/bin/chromium
     set --export CHROME_EXECUTABLE /usr/bin/chromium
+
     # flutter
     set --export PATH $PATH ~/Logiciels/flutter/bin
-    # Krew
-    set --export PATH $PATH $HOME/.krew/bin
-    # Elrond
-    set --export PATH $PATH $HOME/multiversx-sdk
     # Android
     set --export ANDROID_HOME $HOME/Android/Sdk
     set --export PATH $PATH $ANDROID_HOME/tools/bin/ $ANDROID_HOME/emulator/
-    # local bin
-    set --export PATH $PATH ~/.local/bin
-    # bun
-    set --export BUN_INSTALL "$HOME/.bun"
-    set --export PATH $BUN_INSTALL/bin $PATH
-    # julia
-    set --export PATH $HOME/.juliaup/bin $PATH
-    # Roc
-    set --export PATH $HOME/roc_nightly/ $PATH
-    # Zig
-    set --export PATH $HOME/zig/ $PATH
+    
+    # Mvx
+    set --export PATH $PATH $HOME/multiversx-sdk
 
+    # Krew
+    set --export PATH $PATH $HOME/.krew/bin
     # loki
     set --export LOKI_ADDR ${secrets.LOKI_ADDR}
     set --export LOKI_USERNAME ${secrets.LOKI_USERNAME}
