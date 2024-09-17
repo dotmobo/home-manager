@@ -33,6 +33,7 @@
     git = (import ./git.nix { inherit pkgs; });
     tmux = (import ./tmux.nix { inherit pkgs; });
     neovim = (import ./neovim.nix { inherit pkgs; });
+    fish = (import ./fish.nix { inherit pkgs; });
   };
 
   fonts.fontconfig.enable = true;
