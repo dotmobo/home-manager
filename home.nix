@@ -19,6 +19,8 @@
     # Fonts
     fira-code
     fira-code-symbols
+    # Terminal
+    guake
     # Programming languages
     nodejs_20
     go
