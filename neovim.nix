@@ -42,6 +42,4 @@
       " Afficher une column à 120 (le max en TS)
       set colorcolumn=120
     '';
-
-
 }
