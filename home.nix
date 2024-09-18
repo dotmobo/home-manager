@@ -48,6 +48,8 @@
     bats
     ripgrep
     tmux
+    eza
+    fd
     # Prompt
     atuin
     starship

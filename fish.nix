@@ -61,12 +61,12 @@ in
   '';
 
   shellAliases = {
-    vi = "nvim";
-    vim = "nvim";
-
+    ls = "eza";
     ll = "ls -l";
     la = "ls -A";
     l = "ls -CF";
+
+    find = "fd";
 
     prettyjson = "python -mjson.tool";
 
