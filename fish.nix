@@ -4,22 +4,10 @@ let
   secrets =
     if builtins.pathExists "/home/morgan/.config/home-manager/secrets.nix"
     then import /home/morgan/.config/home-manager/secrets.nix
-    else { };
-  tmuxFishConfig = '' 
-    if not set -q TMUX
-      set -g TMUX tmux new-session -d -s base
-      eval $TMUX
-      tmux attach-session -d -t base
-    end
-  '';
+    else { };  
 in
 {
   enable = true;
-
-  shellInit = ''
-    mkdir -p ~/.config/fish/conf.d
-    echo "${tmuxFishConfig}" > ~/.config/fish/conf.d/tmux.fish
-  '';
 
   interactiveShellInit = ''
     # Remove greeting message
@@ -27,7 +15,7 @@ in
 
     # User configuration
     set --export LANG fr_FR.UTF-8
-    set --export EDITOR vim
+    set --export EDITOR nvim
 
     # local bin
     set --export PATH $PATH ~/.local/bin
@@ -58,9 +46,24 @@ in
     set --export JENKINS_URL ${secrets.JENKINS_URL}
     set --export JENKINS_USER_ID ${secrets.JENKINS_USER_ID}
     set --export JENKINS_API_TOKEN ${secrets.JENKINS_API_TOKEN}
+
+    # Atuin
+    set --export ATUIN_SESSION (atuin uuid)
+
+    # Starship
+    starship init fish | source
+
+    # Zellij
+    if set -q ZELLIJ
+    else
+      zellij
+    end
   '';
 
   shellAliases = {
+    vi = "nvim";
+    vim = "nvim";
+
     ll = "ls -l";
     la = "ls -A";
     l = "ls -CF";

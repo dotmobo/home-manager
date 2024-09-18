@@ -19,6 +19,7 @@
     # Fonts
     fira-code
     fira-code-symbols
+    (nerdfonts.override { fonts = [ "FiraCode" ]; })
     # Terminal
     guake
     # Programming languages
@@ -45,6 +46,12 @@
     htop
     xclip
     bats
+    ripgrep
+    tmux
+    # Prompt
+    atuin
+    starship
+    zellij
   ];
 
   home.file = { };
@@ -55,10 +62,16 @@
 
   programs = {
     git = (import ./git.nix { inherit pkgs; });
-    tmux = (import ./tmux.nix { inherit pkgs; });
     neovim = (import ./neovim.nix { inherit pkgs; });
     fish = (import ./fish.nix { inherit pkgs; });
     vscode = (import ./vscode.nix { inherit pkgs; });
+    zoxide = {
+      enable = true;
+      enableFishIntegration= true;
+      options = [
+        "--cmd cd"
+      ];
+    };
   };
 
   fonts.fontconfig.enable = true;
