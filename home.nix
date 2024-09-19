@@ -22,16 +22,25 @@ in
   home.stateVersion = "24.05";
 
   home.packages = with pkgs; [
+    devenv
     # Fonts
     fira-code
     fira-code-symbols
     (nerdfonts.override { fonts = [ "FiraCode" ]; })
     # Terminal
     guake
+    tdrop
+    wmctrl
+    alacritty # need nixGL
+    st
+    atuin
+    starship
+    zellij
     # Programming languages
     nodejs_20
     go
     python312
+    pipx
     poetry
     ruff
     black
@@ -58,10 +67,7 @@ in
     fd
     tree
     peek
-    # Prompt
-    atuin
-    starship
-    zellij
+    rsync
   ];
 
   home.file = { };

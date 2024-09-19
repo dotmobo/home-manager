@@ -24,7 +24,6 @@
     ls = "eza";
     ll = "ls -l";
     la = "ls -A";
-    l = "ls -CF";
 
     find = "fd";
 
