@@ -9,7 +9,9 @@
     editor.fontSize = 14;
     editor.fontFamily = "Fira Code";
     editor.fontLigatures = true;
+    editor.defaultFormatter = "esbenp.prettier-vscode";
     window.zoomLevel = 1.25;
+    "[html]".editor.defaultFormatter = "vscode.html-language-features";
   };
 
   extensions = with pkgs.vscode-extensions; [
