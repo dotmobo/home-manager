@@ -116,6 +116,13 @@ in
         "--cmd cd"
       ];
     };
+    zellij = {
+      enable = true;
+      settings = {
+        copy_command = "xclip -selection clipboard";
+        paste_command = "xclip -selection clipboard -o";
+      };
+    };
   };
 
   fonts.fontconfig.enable = true;

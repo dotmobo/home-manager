@@ -67,6 +67,9 @@
 
     # code = "code-insiders";
 
+    # lvm extend and resize a partition with 10G with the name of the partition as the first argument in fish shell
+    extend = "sudo lvextend -L +10G /dev/mapper/$argv[1] && sudo resize2fs /dev/mapper/$argv[1]";
+
   };
 }
 

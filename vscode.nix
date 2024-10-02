@@ -10,8 +10,10 @@
     editor.fontFamily = "Fira Code";
     editor.fontLigatures = true;
     window.zoomLevel = 1.25;
+    explorer.confirmDelete = false;
     "[typescript]".editor.defaultFormatter = "esbenp.prettier-vscode";
     "[html]".editor.defaultFormatter = "vscode.html-language-features";
+    extensions.ignoreRecommendations = true;
   };
 
   extensions = with pkgs.vscode-extensions; [
