@@ -11,7 +11,7 @@
     };
     credential = {
       "https://github.com" = {
-        helper = "!/usr/bin/gh auth git-credential";
+        helper = "!gh auth git-credential";
       };
     };
   };
