@@ -35,7 +35,6 @@ in
     st
     atuin
     starship
-    zellij
     # Programming languages
     nodejs_20
     go
@@ -64,10 +63,19 @@ in
     ripgrep
     tmux
     eza
+    bat
     fd
     tree
     peek
     rsync
+    gh
+    zip
+    unzip
+    unrar
+    transmission
+    # Network
+    traceroute
+    tcpdump
   ];
 
   home.file = { };
