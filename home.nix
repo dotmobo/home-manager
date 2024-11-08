@@ -36,6 +36,7 @@ in
     atuin
     starship
     # Programming languages
+    gcc
     nodejs_20
     go
     python312
@@ -101,6 +102,8 @@ in
     JENKINS_API_TOKEN = "${secrets.JENKINS_API_TOKEN}";
     # Android
     ANDROID_HOME = "/home/morgan/Android/Sdk";
+    # Libs
+    LD_LIBRARY_PATH = "${pkgs.stdenv.cc.cc.lib}/lib:$LD_LIBRARY_PATH";
   };
 
   home.sessionPath = [ 
