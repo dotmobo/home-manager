@@ -39,12 +39,15 @@ in
     gcc
     nodejs_20
     go
+    python3
     python312
     pipx
     poetry
     ruff
     black
     pyright
+    ansible
+    sshpass
     rustc
     rustfmt
     cargo
