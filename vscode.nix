@@ -26,7 +26,6 @@
     ms-python.debugpy
     ms-python.black-formatter
     charliermarsh.ruff
-    ms-pyright.pyright
     esbenp.prettier-vscode
     dbaeumer.vscode-eslint
     ms-azuretools.vscode-docker
