@@ -14,6 +14,7 @@
     "[typescript]".editor.defaultFormatter = "esbenp.prettier-vscode";
     "[html]".editor.defaultFormatter = "vscode.html-language-features";
     extensions.ignoreRecommendations = true;
+    "[python]".editor.defaultFormatter = "charliermarsh.ruff";
   };
 
   extensions = with pkgs.vscode-extensions; [
