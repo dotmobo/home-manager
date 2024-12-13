@@ -26,7 +26,7 @@ in
     # Fonts
     fira-code
     fira-code-symbols
-    (nerdfonts.override { fonts = [ "FiraCode" ]; })
+    nerd-fonts.fira-code
     # Terminal
     guake
     tdrop

@@ -1,5 +1,10 @@
 { pkgs, ... }:
 
+let
+  unstablePkgs = import <nixpkgs> {
+    system = builtins.currentSystem;
+  };
+in
 {
   enable = true;
 
@@ -42,7 +47,8 @@
     rust-lang.rust-analyzer
     vadimcn.vscode-lldb
     tamasfe.even-better-toml
-    # elrond.vscode-elrond-ide
-    # jetmartin.bats
+    # Utilisation de nix-unstable pour certaines extensions
+    (unstablePkgs.vscode-extensions.jetmartin.bats)
+    (unstablePkgs.vscode-extensions.pollywoggames.pico8-ls)
   ];
 }
