@@ -39,14 +39,15 @@ in
     gcc
     nodejs_20
     go
-    python3
-    python312
+    python39
     pipx
     poetry
+    uv
     ruff
     black
     pyright
     ansible
+    portaudio
     sshpass
     rustc
     rustfmt
@@ -107,7 +108,7 @@ in
     # Android
     ANDROID_HOME = "/home/morgan/Android/Sdk";
     # Libs
-    LD_LIBRARY_PATH = "${pkgs.stdenv.cc.cc.lib}/lib:$LD_LIBRARY_PATH";
+    LD_LIBRARY_PATH = "${pkgs.portaudio}/lib:${pkgs.stdenv.cc.cc.lib}/lib:$LD_LIBRARY_PATH";
   };
 
   home.sessionPath = [ 
