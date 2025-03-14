@@ -9,11 +9,16 @@ in
   enable = true;
 
   userSettings = {
-    workbench.colorTheme = "Dracula";
+    workbench.colorTheme = "Dracula Theme";
     workbench.startupEditor = "none";
     editor.fontSize = 14;
     editor.fontFamily = "Fira Code";
     editor.fontLigatures = true;
+    editor.rulers = [
+      { column = 120; color = "#7d4a4a"; }
+    ];
+    editor.insertSpaces = true;
+    editor.tabSize = 4;
     window.zoomLevel = 1.25;
     explorer.confirmDelete = false;
     "[typescript]".editor.defaultFormatter = "esbenp.prettier-vscode";
