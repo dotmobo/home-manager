@@ -52,6 +52,7 @@ in
     rust-lang.rust-analyzer
     vadimcn.vscode-lldb
     tamasfe.even-better-toml
+    redhat.ansible
     # Utilisation de nix-unstable pour certaines extensions
     (unstablePkgs.vscode-extensions.jetmartin.bats)
     (unstablePkgs.vscode-extensions.pollywoggames.pico8-ls)
