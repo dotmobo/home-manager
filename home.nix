@@ -47,6 +47,7 @@ in
     black
     pyright
     ansible
+    ansible-lint
     portaudio
     sshpass
     rustc
