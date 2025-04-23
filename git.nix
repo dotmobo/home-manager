@@ -3,7 +3,7 @@
 {
   enable = true;
   userName = "mobo";
-  userEmail = "morgan.bohn@pc-scol.fr";
+  userEmail = "morgan.bohn@unistra.fr";
   extraConfig = {
     push = {
       default = "current";

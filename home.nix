@@ -19,7 +19,7 @@ in
   home.username = "morgan";
   home.homeDirectory = "/home/morgan";
 
-  home.stateVersion = "24.05";
+  home.stateVersion = "24.11";
 
   home.packages = with pkgs; [
     devenv
@@ -39,7 +39,7 @@ in
     gcc
     nodejs_20
     go
-    python39
+    python3
     pipx
     poetry
     uv
