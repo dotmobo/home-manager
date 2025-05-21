@@ -31,8 +31,7 @@ in
   extensions = with pkgs.vscode-extensions; [
     dracula-theme.theme-dracula
     jnoortheen.nix-ide
-    angular.ng-template
-    # cyrilletuzi.angular-schematics
+    samuelcolvin.jinjahtml
     ms-python.python
     ms-python.vscode-pylance
     ms-python.debugpy

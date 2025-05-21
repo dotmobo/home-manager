@@ -35,6 +35,7 @@ in
     st
     atuin
     starship
+    gum
     # Programming languages
     gcc
     nodejs_20
@@ -138,6 +139,7 @@ in
       settings = {
         copy_command = "xclip -selection clipboard";
         paste_command = "xclip -selection clipboard -o";
+        show_startup_tips = false;
       };
     };
   };
