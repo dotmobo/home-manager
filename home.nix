@@ -38,7 +38,11 @@ in
     gum
     # Programming languages
     gcc
-    nodejs_20
+    zlib
+    nodejs_22
+    pnpm
+    bun
+    deno
     go
     python3
     pipx
@@ -84,6 +88,8 @@ in
     # Network
     traceroute
     tcpdump
+    # llm
+    llama-cpp
   ];
 
   home.file = { };
@@ -110,7 +116,7 @@ in
     # Android
     ANDROID_HOME = "/home/morgan/Android/Sdk";
     # Libs
-    LD_LIBRARY_PATH = "${pkgs.portaudio}/lib:${pkgs.stdenv.cc.cc.lib}/lib:$LD_LIBRARY_PATH";
+    LD_LIBRARY_PATH = "${pkgs.zlib}/lib:${pkgs.portaudio}/lib:${pkgs.stdenv.cc.cc.lib}/lib:$LD_LIBRARY_PATH";
   };
 
   home.sessionPath = [ 
