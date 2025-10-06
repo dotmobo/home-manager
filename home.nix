@@ -62,6 +62,8 @@ in
     clippy
     zig
     lua
+    nim
+    odin
     # Tools
     httpie
     wget
@@ -90,6 +92,16 @@ in
     tcpdump
     # llm
     llama-cpp
+    # kube
+    openshift
+    kubernetes-helm
+    argocd
+    s3cmd
+    rclone
+    podman
+    skopeo
+    pandoc
+    texliveTeTeX
   ];
 
   home.file = { };
